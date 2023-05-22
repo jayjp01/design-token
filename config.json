@@ -1,0 +1,38 @@
+{
+  "source": [
+    "**/*.tokens.json"
+  ],
+  "platforms": {
+    "css": {
+      "transformGroup": "tokens-studio",
+      "prefix": "sd",
+      "buildPath": "build/css/",
+      "files": [
+        {
+          "destination": "_variables.css",
+          "format": "css/variables"
+        }
+      ]
+    },
+    "js": {
+      "transformGroup": "tokens-studio",
+      "buildPath": "build/jtr/",
+      "files": [
+        {
+          "destination": "variables.js",
+          "format": "javascript/es6"
+        }
+      ]
+    },
+    "json-flat": {
+      "transformGroup": "js",
+      "buildPath": "build/json/",
+      "files": [
+        {
+          "destination": "styles.json",
+          "format": "json/flat"
+        }
+      ]
+    }
+  }
+}
